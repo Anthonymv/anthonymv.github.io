@@ -10,95 +10,79 @@
 </head>
 <body>
 
-  <!-- Sidebar Navigation -->
+  <!-- Sidebar -->
   <nav class="position-fixed">
-    <div class="d-flex flex-column h-100 justify-content-between">
+    <div class="d-flex flex-column justify-content-between h-100">
       <div>
         <h5 class="mb-4 fw-bold">Anthony BI</h5>
         <ul class="nav flex-column gap-1">
           <li><a class="nav-link" href="#home">Home</a></li>
         </ul>
       </div>
-      <div class="contact-info small px-2 mt-4">
-        <hr />
-        <p class="fw-bold mb-1">Contacto</p>
-        <p class="mb-0">📧 anthony.delgado@email.com</p>
-        <p class="mb-0">📱 +56 9 1234 5678</p>
-        <p class="mb-0">📍 Santiago, Chile</p>
+      <div class="contacto-sidebar mt-5 pt-4 border-top">
+        <h6 class="fw-bold">Contacto</h6>
+        <p class="mb-1">📧<br><small>anthony.delgado@email.com</small></p>
+        <p class="mb-1">📱<br><small>+56 9 1234 5678</small></p>
+        <p class="mb-0">📍<br><small>Santiago, Chile</small></p>
       </div>
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main class="main-section">
-    <section class="hero">
-      <div class="container text-center text-white">
+  <!-- Main -->
+  <main class="vh-100 overflow-hidden">
+    <section class="hero d-flex flex-column justify-content-center align-items-center text-white text-center">
+      <div>
         <h1 class="display-4 fw-bold">Anthony Delgado</h1>
         <p class="lead">Soluciones Cloud | Análisis de Negocios</p>
       </div>
     </section>
 
-    <section id="portfolio" class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Mi Portafolio de Datos</h2>
-        <p class="text-muted">Explora mis soluciones BI, arquitecturas cloud</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <a href="#bi" class="card-portfolio text-decoration-none text-dark">
-            <div class="card shadow h-100 text-center p-4">
-              <div class="icon mb-3">📊</div>
-              <h5 class="fw-bold">Business Intelligence</h5>
-              <p class="text-muted">Dashboards interactivos y visualización de KPIs.</p>
-            </div>
-          </a>
+    <section id="portfolio" class="container text-center">
+      <h2 class="fw-bold mb-2">Mi Portafolio de Datos</h2>
+      <p class="text-muted mb-4">Explora mis soluciones BI, arquitecturas cloud</p>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <div class="card p-3 h-100 shadow-sm">
+            <div class="icon fs-2 mb-2">📊</div>
+            <h6 class="fw-bold">Business Intelligence</h6>
+            <p class="text-muted small">Visualización de KPIs.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="#cloud" class="card-portfolio text-decoration-none text-dark">
-            <div class="card shadow h-100 text-center p-4">
-              <div class="icon mb-3">☁️</div>
-              <h5 class="fw-bold">Arquitectura Cloud</h5>
-              <p class="text-muted">Soluciones escalables en Azure, AWS y Synapse.</p>
-            </div>
-          </a>
+        <div class="col-6 col-md-4">
+          <div class="card p-3 h-100 shadow-sm">
+            <div class="icon fs-2 mb-2">☁️</div>
+            <h6 class="fw-bold">Arquitectura Cloud</h6>
+            <p class="text-muted small">Soluciones escalables en Azure, AWS.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="#modelado" class="card-portfolio text-decoration-none text-dark">
-            <div class="card shadow h-100 text-center p-4">
-              <div class="icon mb-3">🧱</div>
-              <h5 class="fw-bold">Modelado de Datos</h5>
-              <p class="text-muted">Modelos estrella, snowflake, historización.</p>
-            </div>
-          </a>
+        <div class="col-6 col-md-4">
+          <div class="card p-3 h-100 shadow-sm">
+            <div class="icon fs-2 mb-2">🧱</div>
+            <h6 class="fw-bold">Modelado de Datos</h6>
+            <p class="text-muted small">Modelos estrella, historización.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="#etl" class="card-portfolio text-decoration-none text-dark">
-            <div class="card shadow h-100 text-center p-4">
-              <div class="icon mb-3">🔄</div>
-              <h5 class="fw-bold">ETL / ELT</h5>
-              <p class="text-muted">Pipelines eficientes, automatización y control.</p>
-            </div>
-          </a>
+        <div class="col-6 col-md-4">
+          <div class="card p-3 h-100 shadow-sm">
+            <div class="icon fs-2 mb-2">🔄</div>
+            <h6 class="fw-bold">ETL / ELT</h6>
+            <p class="text-muted small">Automatización eficiente de pipelines.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="#analisis" class="card-portfolio text-decoration-none text-dark">
-            <div class="card shadow h-100 text-center p-4">
-              <div class="icon mb-3">📈</div>
-              <h5 class="fw-bold">Análisis & Insights</h5>
-              <p class="text-muted">Descubrimiento de patrones y valor para el negocio.</p>
-            </div>
-          </a>
+        <div class="col-6 col-md-4">
+          <div class="card p-3 h-100 shadow-sm">
+            <div class="icon fs-2 mb-2">📈</div>
+            <h6 class="fw-bold">Análisis & Insights</h6>
+            <p class="text-muted small">Valor para el negocio.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer text-center py-4">
-      <div class="container text-white">
-        <small>&copy; 2025 Anthony Delgado. Todos los derechos reservados.</small>
-      </div>
+    <footer class="footer text-center text-white mt-auto">
+      <small>&copy; 2025 Anthony Delgado. Todos los derechos reservados.</small>
     </footer>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
