@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   switch (view) {
     case "fonasa":
       load("content", "sections/fonasa.html");
-      load("header", "sections/header.html");
+      //load("header", "sections/header.html");
       break;
     case "bi":
       // No cargar header aquí
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       break;
     case "usuarios-activos":
       load("content", "sections/usuarios-activos.html");
-      load("header", "sections/header.html");
+      //load("header", "sections/header.html");
       break;
     default:
       load("content", "sections/inicio.html");
