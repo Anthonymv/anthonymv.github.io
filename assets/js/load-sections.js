@@ -3,6 +3,7 @@ const loadSection = (id, path) => {
     .then(res => res.text())
     .then(data => document.getElementById(id).innerHTML = data);
 };
+
 window.onload = () => {
   loadSection("header", "/sections/header.html");
   loadSection("nav", "/sections/nav.html");

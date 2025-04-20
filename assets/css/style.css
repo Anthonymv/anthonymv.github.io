@@ -1,7 +1,61 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header, footer { background-color: #004080; color: white; text-align: center; padding: 1em; }
-nav { background-color: #f2f2f2; padding: 1em; display: flex; flex-wrap: wrap; justify-content: center; gap: 1em; }
-nav a { text-decoration: none; color: #004080; font-weight: bold; }
-main { padding: 2em; }
-h2 { color: #004080; border-bottom: 2px solid #ccc; padding-bottom: 0.3em; }
-.note { font-size: 0.9em; color: #666; }
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  nav a:hover {
+    color: #005bb5;
+  }
+  main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+  }
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }  
