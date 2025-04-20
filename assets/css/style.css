@@ -1,33 +1,48 @@
-/* General */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f5f6fa;
+    color: #222;
     margin: 0;
     padding: 0;
   }
   
-  /* Hero */
   .hero {
-    background: linear-gradient(to right, #2b2d42, #003366);
+    background: linear-gradient(to right, #141e30, #243b55);
     min-height: 90vh;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   
-  /* Portfolio Cards */
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
+  
   .card-portfolio .icon {
     font-size: 2rem;
     color: #003366;
   }
+  
   .card-portfolio .card {
+    border: none;
     border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
     transition: all 0.2s ease-in-out;
   }
+  
   .card-portfolio .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 0.7rem 1.2rem rgba(0,0,0,0.1);
   }
   
-  /* Footer */
   .footer {
     background-color: #003366;
     color: white;
