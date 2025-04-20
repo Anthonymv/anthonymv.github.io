@@ -11,13 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
   load("header", "sections/header.html");
   load("footer", "sections/footer.html");
 
-  const path = window.location.pathname;
+  const params = new URLSearchParams(window.location.search);
+  const view = params.get("view");
 
-  if (path.includes("fonasa.html")) {
-    load("content", "sections/fonasa.html");
-  } else if (path.includes("bi.html")) {
-    load("content", "sections/bi.html");
-  } else {
-    load("content", "sections/inicio.html");
+  switch (view) {
+    case "fonasa":
+      load("content", "sections/fonasa.html");
+      break;
+    case "bi":
+      load("content", "sections/bi.html");
+      break;
+    case "cloud":
+      load("content", "sections/cloud.html");
+      break;
+    default:
+      load("content", "sections/inicio.html");
   }
 });
