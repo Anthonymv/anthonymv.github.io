@@ -1,13 +1,12 @@
-/* === Global === */
-html, body {
-    height: 100%;
+
+body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    background-color: #f0f2f5; /* fondo general */
+    background-color: #f5f6fa;
     color: #222;
+    margin: 0;
+    padding: 0;
   }
   
-  /* === Hero Section === */
   .hero {
     background: linear-gradient(to right, #141e30, #243b55);
     min-height: 90vh;
@@ -16,7 +15,6 @@ html, body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
   }
   
   .hero h1 {
@@ -29,7 +27,6 @@ html, body {
     margin-top: 0.5rem;
   }
   
-  /* === Portfolio Cards === */
   .card-portfolio .icon {
     font-size: 2rem;
   }
@@ -39,7 +36,6 @@ html, body {
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
     transition: all 0.2s ease-in-out;
-    background-color: #fff;
   }
   
   .card-portfolio .card:hover {
@@ -47,7 +43,6 @@ html, body {
     box-shadow: 0 0.7rem 1.2rem rgba(0,0,0,0.1);
   }
   
-  /* === Footer === */
   .footer {
     background-color: #003366;
     color: white;
