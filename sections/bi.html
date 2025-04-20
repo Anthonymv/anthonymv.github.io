@@ -1,4 +1,4 @@
-<!-- Hero (sin encabezado global) -->
+<!-- Hero alineado al centro -->
 <section class="hero d-flex justify-content-center align-items-center text-white text-center" style="min-height: 50vh;">
   <div>
     <h1 class="display-4 fw-bold">Soluciones BI</h1>
@@ -6,10 +6,10 @@
   </div>
 </section>
 
-<!-- Tableau Dashboards -->
-<section class="container py-4">
-  <div class="row justify-content-center g-4">
-    <div class="col-md-6 col-lg-4">
+<!-- Dashboard Cards alineadas como el iframe -->
+<section class="container d-flex flex-column align-items-center py-5">
+  <div class="row justify-content-center g-4" style="max-width: 1000px; width: 100%;">
+    <div class="col-md-6">
       <a href="/index.html?view=fonasa" class="text-decoration-none">
         <div class="card shadow p-4 text-center">
           <h5 class="fw-bold">KPI Telemedicina</h5>
@@ -17,7 +17,7 @@
         </div>
       </a>
     </div>
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-6">
       <a href="/index.html?view=usuarios-activos" class="text-decoration-none">
         <div class="card shadow p-4 text-center">
           <h5 class="fw-bold">Usuarios Activos</h5>
@@ -27,9 +27,3 @@
     </div>
   </div>
 </section>
-
-<script>
-  if (window.location.pathname.includes('/sections/bi.html')) {
-    window.location.href = '/index.html?view=bi';
-  }
-</script>
