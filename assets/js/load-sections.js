@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   load("nav", "sections/nav.html");
   load("header", "sections/header.html");
-  load("content", "sections/inicio.html");
+  if (document.getElementById("content")) {
+    load("content", "sections/inicio.html");
+  }
   load("footer", "sections/footer.html");
 });

@@ -1,9 +1,27 @@
+<!-- header -->
+<div id="header"></div>
+
+<!-- contenido del dashboard -->
 <section class="container py-5">
-    <h2 class="fw-bold text-center">Dashboard: KPI Telemedicina</h2>
-    <div class="ratio ratio-16x9 mt-4 shadow rounded">
-      <iframe 
-        src="https://public.tableau.com/views/NOMBRE_TABLERO/HOJA" 
-        frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-  
+  <h2 class="fw-bold text-center mb-4">Dashboard: KPI Telemedicina</h2>
+
+  <!-- Botón para volver a BI -->
+  <div class="text-center mb-4">
+    <a href="/sections/bi.html" class="btn btn-outline-secondary">🔙 Volver a Soluciones BI</a>
+  </div>
+
+  <!-- Embed Tableau -->
+  <div class="ratio ratio-16x9 shadow rounded">
+    <iframe 
+      src="https://public.tableau.com/views/NOMBRE_TABLERO/HOJA" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- footer -->
+<div id="footer"></div>
+
+<!-- script para cargar header y footer -->
+<script src="/assets/js/load-sections.js"></script>
