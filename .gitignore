@@ -1,0 +1,31 @@
+# Archivos del sistema (Mac)
+.DS_Store
+
+# Carpetas temporales
+node_modules/
+dist/
+tmp/
+.cache/
+.vscode/
+.idea/
+
+# Archivos personales
+*.log
+*.pem
+*.key
+*.env
+*.sqlite
+*.db
+
+# Archivos de sistema ocultos
+Thumbs.db
+desktop.ini
+
+# Salida de compilaciones
+*.zip
+*.tar.gz
+*.bak
+*.swp
+
+# Archivos de backup
+*~
