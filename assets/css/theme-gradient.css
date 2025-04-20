@@ -1,36 +1,39 @@
-/* === GLOBAL === */
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #9932cc, #ff5e00); /* más morado */
+  background: linear-gradient(135deg, #952aff, #ff5e00);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-/* === SIDEBAR === */
+/* Sidebar */
 nav.position-fixed {
   width: 240px;
-  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1050;
+  background-color: #ffffff;
   padding: 2rem 1rem;
-  background-color: #fff;
-  border-right: 1px solid #eee;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.03);
+  border-right: 1px solid #e5e7eb;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 nav .nav-link {
-  color: #333;
+  color: #374151;
   font-weight: 500;
+  font-size: 0.95rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.4rem;
-  transition: background 0.2s;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 nav .nav-link:hover {
@@ -38,36 +41,28 @@ nav .nav-link:hover {
   color: #2563eb;
 }
 
-.contacto-sidebar {
+.sidebar-contact {
   font-size: 0.85rem;
-  color: #333;
+  color: #374151;
 }
 
-/* === MAIN AREA === */
-main {
-  margin-left: 240px;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow-y: auto;
-  scroll-behavior: smooth;
-}
-
-/* === HERO === */
+/* Hero */
 .hero {
-  flex: 1 0 auto;
+  height: 35vh;
   padding: 2rem;
 }
 
-/* === PORTFOLIO === */
+/* Portfolio */
 #portfolio {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.97);
   color: #111;
-  padding: 2rem;
   border-radius: 1rem;
-  margin: 0 1rem 2rem;
+  padding: 2rem;
+  margin: 0 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Cards */
 .card {
   border: none;
   border-radius: 1rem;
@@ -76,12 +71,12 @@ main {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0.7rem 1rem rgba(0,0,0,0.08);
+  box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 0.08);
 }
 
-/* === FOOTER === */
+/* Footer */
 .footer {
   background: transparent;
-  padding: 1rem;
   font-size: 0.85rem;
+  color: #f0f0f0;
 }
