@@ -3,23 +3,24 @@
 
 <!-- contenido del dashboard -->
 <section class="container py-5">
-  <h2 class="fw-bold text-center mb-4">Dashboard: KPI Telemedicina</h2>
+  <h2 class="fw-bold text-center text-white mb-4">Dashboard: KPI Telemedicina</h2>
 
   <!-- Botón para volver a BI -->
   <div class="text-center mb-4">
-    <a href="/sections/bi.html" class="btn btn-outline-secondary">🔙 Volver a Soluciones BI</a>
+    <a href="/index.html?view=bi" class="btn btn-light">🔙 Volver a Soluciones BI</a>
   </div>
 
-  <!-- Embed Tableau con iframe (más simple y seguro) -->
-  <div class="ratio ratio-16x9 shadow rounded">
-    <iframe 
-      src="https://public.tableau.com/views/Fonasa_17451793210550/DistribucinporSexo?:embed=yes&:display_count=yes&:showVizHome=no"
-      frameborder="0" 
-      allowfullscreen 
-      style="width: 100%; height: 600px;">
-    </iframe>
+  <!-- Embed Tableau con iframe -->
+  <div class="d-flex justify-content-center">
+    <div class="shadow rounded overflow-hidden" style="max-width: 1000px; width: 100%;">
+      <iframe 
+        src="https://public.tableau.com/views/Fonasa_17451793210550/DistribucinporSexo?:embed=yes&:display_count=yes&:showVizHome=no"
+        frameborder="0" 
+        allowfullscreen 
+        style="width: 100%; height: 600px;">
+      </iframe>
+    </div>
   </div>
-  
 </section>
 
 <!-- footer -->
