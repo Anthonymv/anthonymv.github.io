@@ -58,8 +58,9 @@ nav .nav-link:hover {
   color: #111;
   border-radius: 1rem;
   padding: 2rem;
-  margin: 0 1rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1280px;
 }
 
 /* Cards */
