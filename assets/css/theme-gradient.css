@@ -1,15 +1,14 @@
-/* === GENERAL === */
+/* === GLOBAL === */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #8e2de2, #ff6a00);
+  background: linear-gradient(135deg, #9932cc, #ff5e00); /* más morado */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  scroll-behavior: smooth;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -17,103 +16,72 @@ html, body {
 nav.position-fixed {
   width: 240px;
   height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 1050;
-  background-color: #ffffff;
   padding: 2rem 1rem;
-  border-right: 1px solid #e5e7eb;
-  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  border-right: 1px solid #eee;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.03);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-nav h5 {
-  font-size: 1.25rem;
-  color: #111827;
-}
-
 nav .nav-link {
-  color: #374151;
+  color: #333;
   font-weight: 500;
-  font-size: 0.95rem;
-  padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
-  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  transition: background 0.2s;
 }
 
-nav .nav-link:hover,
-nav .nav-link.active {
-  background-color: #f3f4f6;
+nav .nav-link:hover {
+  background-color: #f0f4ff;
   color: #2563eb;
 }
 
-.contact-info {
+.contacto-sidebar {
   font-size: 0.85rem;
-  color: #374151;
+  color: #333;
 }
 
-/* === MAIN === */
-.main-section {
+/* === MAIN AREA === */
+main {
   margin-left: 240px;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   overflow-y: auto;
-  padding: 2rem 1rem;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* === HERO === */
 .hero {
-  min-height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  margin-bottom: 2rem;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  margin-top: 0.5rem;
+  flex: 1 0 auto;
+  padding: 2rem;
 }
 
 /* === PORTFOLIO === */
 #portfolio {
   background-color: rgba(255, 255, 255, 0.95);
   color: #111;
+  padding: 2rem;
   border-radius: 1rem;
-  padding: 3rem 1rem;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  margin: 0 1rem 2rem;
 }
 
-.card-portfolio .icon {
-  font-size: 2rem;
-}
-
-.card-portfolio .card {
+.card {
   border: none;
   border-radius: 1rem;
-  background: white;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
   transition: all 0.2s ease-in-out;
 }
 
-.card-portfolio .card:hover {
+.card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 0.7rem 1.2rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.7rem 1rem rgba(0,0,0,0.08);
 }
 
 /* === FOOTER === */
 .footer {
-  background-color: transparent;
-  color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  background: transparent;
+  padding: 1rem;
+  font-size: 0.85rem;
 }
