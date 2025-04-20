@@ -10,95 +10,113 @@
 </head>
 <body>
 
-  <!-- Hero / Intro -->
-  <section class="hero">
-    <div class="container text-center text-white py-5">
-      <h1 class="display-4 fw-bold">Anthony Delgado</h1>
-      <p class="lead">Coordinador BI & Data | Soluciones Cloud | Análisis de Negocios</p>
-      <a href="#portfolio" class="btn btn-light btn-lg mt-3">Explorar Portafolio</a>
+  <!-- Sidebar Navigation -->
+  <nav class="position-fixed bg-white shadow-sm p-4 vh-100" style="width: 260px; z-index: 1040;">
+    <div class="d-flex flex-column h-100">
+      <h5 class="mb-4 fw-bold text-primary">Anthony BI</h5>
+      <ul class="nav flex-column gap-2">
+        <li><a class="nav-link text-dark fw-semibold" href="#bi">📊 BI</a></li>
+        <li><a class="nav-link text-dark fw-semibold" href="#cloud">☁️ Cloud</a></li>
+        <li><a class="nav-link text-dark fw-semibold" href="#modelado">🧱 Modelado</a></li>
+        <li><a class="nav-link text-dark fw-semibold" href="#etl">🔄 ETL/ELT</a></li>
+        <li><a class="nav-link text-dark fw-semibold" href="#analisis">📈 Insights</a></li>
+        <li><a class="nav-link text-dark fw-semibold" href="#contacto">📬 Contacto</a></li>
+      </ul>
+      <div class="mt-auto">
+        <a class="btn btn-outline-primary w-100 mt-4" href="#contacto">Conversemos</a>
+      </div>
     </div>
-  </section>
+  </nav>
 
-  <!-- Portfolio Section -->
-  <main id="portfolio" class="container py-5">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Mi Portafolio de Datos</h2>
-      <p class="text-muted">Explora mis soluciones BI, arquitecturas cloud y análisis de valor</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <a href="#bi" class="card-portfolio text-decoration-none text-dark">
-          <div class="card shadow h-100 text-center p-4">
-            <div class="icon mb-3">📊</div>
-            <h5 class="fw-bold">Business Intelligence</h5>
-            <p class="text-muted">Dashboards interactivos y visualización de KPIs.</p>
-          </div>
-        </a>
+  <main style="margin-left: 280px">
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="container text-center text-white py-5">
+        <h1 class="display-4 fw-bold">Anthony Delgado</h1>
+        <p class="lead">Coordinador BI & Data | Soluciones Cloud | Análisis de Negocios</p>
+        <a href="#portfolio" class="btn btn-light btn-lg mt-3">Explorar Portafolio</a>
       </div>
-      <div class="col-md-4">
-        <a href="#cloud" class="card-portfolio text-decoration-none text-dark">
-          <div class="card shadow h-100 text-center p-4">
-            <div class="icon mb-3">☁️</div>
-            <h5 class="fw-bold">Arquitectura Cloud</h5>
-            <p class="text-muted">Soluciones escalables en Azure, AWS y Synapse.</p>
-          </div>
-        </a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Mi Portafolio de Datos</h2>
+        <p class="text-muted">Explora mis soluciones BI, arquitecturas cloud y análisis de valor</p>
       </div>
-      <div class="col-md-4">
-        <a href="#modelado" class="card-portfolio text-decoration-none text-dark">
-          <div class="card shadow h-100 text-center p-4">
-            <div class="icon mb-3">🧱</div>
-            <h5 class="fw-bold">Modelado de Datos</h5>
-            <p class="text-muted">Modelos estrella, snowflake, historización.</p>
-          </div>
-        </a>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="#bi" class="card-portfolio text-decoration-none text-dark">
+            <div class="card shadow h-100 text-center p-4">
+              <div class="icon mb-3">📊</div>
+              <h5 class="fw-bold">Business Intelligence</h5>
+              <p class="text-muted">Dashboards interactivos y visualización de KPIs.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#cloud" class="card-portfolio text-decoration-none text-dark">
+            <div class="card shadow h-100 text-center p-4">
+              <div class="icon mb-3">☁️</div>
+              <h5 class="fw-bold">Arquitectura Cloud</h5>
+              <p class="text-muted">Soluciones escalables en Azure, AWS y Synapse.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#modelado" class="card-portfolio text-decoration-none text-dark">
+            <div class="card shadow h-100 text-center p-4">
+              <div class="icon mb-3">🧱</div>
+              <h5 class="fw-bold">Modelado de Datos</h5>
+              <p class="text-muted">Modelos estrella, snowflake, historización.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#etl" class="card-portfolio text-decoration-none text-dark">
+            <div class="card shadow h-100 text-center p-4">
+              <div class="icon mb-3">🔄</div>
+              <h5 class="fw-bold">ETL / ELT</h5>
+              <p class="text-muted">Pipelines eficientes, automatización y control.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#analisis" class="card-portfolio text-decoration-none text-dark">
+            <div class="card shadow h-100 text-center p-4">
+              <div class="icon mb-3">📈</div>
+              <h5 class="fw-bold">Análisis & Insights</h5>
+              <p class="text-muted">Descubrimiento de patrones y valor para el negocio.</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#contacto" class="card-portfolio text-decoration-none text-dark">
+            <div class="card shadow h-100 text-center p-4">
+              <div class="icon mb-3">📬</div>
+              <h5 class="fw-bold">Contacto</h5>
+              <p class="text-muted">Hablemos sobre cómo puedo aportar a tus proyectos.</p>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="col-md-4">
-        <a href="#etl" class="card-portfolio text-decoration-none text-dark">
-          <div class="card shadow h-100 text-center p-4">
-            <div class="icon mb-3">🔄</div>
-            <h5 class="fw-bold">ETL / ELT</h5>
-            <p class="text-muted">Pipelines eficientes, automatización y control.</p>
-          </div>
-        </a>
+    </section>
+
+    <!-- Contenido dinámico (cargado por JS) -->
+    <div id="bi"></div>
+    <div id="cloud"></div>
+    <div id="modelado"></div>
+    <div id="etl"></div>
+    <div id="analisis"></div>
+    <div id="contacto"></div>
+
+    <footer class="footer text-center py-4">
+      <div class="container text-white">
+        <small>&copy; 2025 Anthony Delgado. Todos los derechos reservados.</small>
       </div>
-      <div class="col-md-4">
-        <a href="#analisis" class="card-portfolio text-decoration-none text-dark">
-          <div class="card shadow h-100 text-center p-4">
-            <div class="icon mb-3">📈</div>
-            <h5 class="fw-bold">Análisis & Insights</h5>
-            <p class="text-muted">Descubrimiento de patrones y valor para el negocio.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a href="#contacto" class="card-portfolio text-decoration-none text-dark">
-          <div class="card shadow h-100 text-center p-4">
-            <div class="icon mb-3">📬</div>
-            <h5 class="fw-bold">Contacto</h5>
-            <p class="text-muted">Hablemos sobre cómo puedo aportar a tus proyectos.</p>
-          </div>
-        </a>
-      </div>
-    </div>
+    </footer>
   </main>
 
-  <!-- Secciones cargadas dinámicamente -->
-  <div id="bi"></div>
-  <div id="cloud"></div>
-  <div id="modelado"></div>
-  <div id="etl"></div>
-  <div id="analisis"></div>
-  <div id="contacto"></div>
-
-  <!-- Footer -->
-  <footer class="footer text-center py-4">
-    <div class="container text-white">
-      <small>&copy; 2025 Anthony Delgado. Todos los derechos reservados.</small>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/js/scripts.js"></script>
 </body>

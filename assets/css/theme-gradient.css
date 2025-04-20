@@ -1,4 +1,4 @@
-
+/* === GENERAL === */
 html, body {
   height: 100%;
   margin: 0;
@@ -9,9 +9,27 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  scroll-behavior: smooth;
 }
 
-/* Hero */
+/* === SIDEBAR === */
+nav.position-fixed {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+nav .nav-link {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease-in-out;
+}
+
+nav .nav-link:hover {
+  background-color: #f1f5ff;
+  color: #0033cc;
+}
+
+/* === HERO === */
 .hero {
   min-height: 90vh;
   display: flex;
@@ -20,6 +38,7 @@ html, body {
   text-align: center;
   flex-direction: column;
   padding: 5rem 1rem;
+  background: transparent;
 }
 
 .hero h1 {
@@ -32,9 +51,9 @@ html, body {
   margin-top: 0.5rem;
 }
 
-/* Portafolio */
+/* === PORTFOLIO === */
 #portfolio {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   color: #111;
   border-radius: 1rem;
   padding: 4rem 1rem;
@@ -60,7 +79,7 @@ html, body {
   box-shadow: 0 0.7rem 1.2rem rgba(0,0,0,0.1);
 }
 
-/* Footer */
+/* === FOOTER === */
 .footer {
   background-color: transparent;
   color: white;
