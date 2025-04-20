@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
     case "cloud":
       load("content", "sections/cloud.html");
       break;
+    case "usuarios-activos":
+      load("content", "sections/usuarios-activos.html");
+      break;
     default:
       load("content", "sections/inicio.html");
   }
