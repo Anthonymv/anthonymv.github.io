@@ -1,24 +1,34 @@
-.hero {
+/* General */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero */
+  .hero {
     background: linear-gradient(to right, #2b2d42, #003366);
+    min-height: 90vh;
+    color: white;
   }
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: 800;
-  }
-  .hero p {
-    font-size: 1.25rem;
-  }
-  .feature-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s;
-  }
-  .feature-card:hover {
-    transform: translateY(-5px);
-  }
-  .feature-icon {
+  
+  /* Portfolio Cards */
+  .card-portfolio .icon {
     font-size: 2rem;
     color: #003366;
   }
+  .card-portfolio .card {
+    border-radius: 1rem;
+    transition: all 0.2s ease-in-out;
+  }
+  .card-portfolio .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  }
   
+  /* Footer */
+  .footer {
+    background-color: #003366;
+    color: white;
+  }  
