@@ -4,12 +4,13 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #6b73ff, #000dff);
+  background: linear-gradient(135deg, #8e2de2, #ff6a00); /* gradiente morado-anaranjado */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* === SIDEBAR === */
@@ -30,6 +31,7 @@ nav.position-fixed {
 nav h5 {
   font-size: 1.25rem;
   color: #111827;
+  margin-bottom: 2rem;
 }
 
 nav .nav-link {
@@ -49,10 +51,46 @@ nav .nav-link.active {
 
 nav .btn-outline-primary {
   font-size: 0.875rem;
-  padding: 0.5rem;
+  padding: 0.6rem 1rem;
   border-radius: 0.5rem;
+  color: #2563eb;
+  border-color: #2563eb;
+  transition: all 0.2s ease-in-out;
+  margin-top: auto;
 }
 
+nav .btn-outline-primary:hover {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+/* === MAIN === */
+main {
+  margin-left: 240px;
+  min-height: 100vh;
+}
+
+/* === HERO === */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  background: transparent;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
 
 /* === PORTFOLIO === */
 #portfolio {
@@ -60,7 +98,6 @@ nav .btn-outline-primary {
   color: #111;
   border-radius: 1rem;
   padding: 4rem 1rem;
-  margin-top: -3rem;
   margin-bottom: 4rem;
   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
 }
@@ -87,4 +124,5 @@ nav .btn-outline-primary {
   background-color: transparent;
   color: white;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
