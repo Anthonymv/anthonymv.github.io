@@ -19,7 +19,7 @@ nav.position-fixed {
   left: 0;
   bottom: 0;
   z-index: 1050;
-  background: linear-gradient(180deg, #1e1136, #3a1036, #731d2e);
+  background: linear-gradient(180deg, #120628, #2a0940, #4a0d35);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 2rem 1rem;
