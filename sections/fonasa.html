@@ -1,29 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Fonasa</title>
-</head>
-<body>
-    <!-- Contenedor principal -->
-    <div style="max-width: 1200px; margin: 0 auto; padding: 20px;">
-        <!-- Título y botón de regreso -->
-        <div style="text-align: center; margin-bottom: 20px;">
-            <h2 style="color: #2c3e50;">Fonasa</h2>
-            <a href="/index.html?view=bi" style="display: inline-block; padding: 8px 16px; background: #ecf0f1; border-radius: 4px; text-decoration: none; color: #2c3e50; margin-bottom: 20px;">
-                ← Volver a Soluciones BI
-            </a>
-        </div>
+<!-- header -->
+<div id="header"></div>
 
-        <!-- Iframe de Tableau -->
-        <div style="width: 100%; height: 0; padding-bottom: 75%; position: relative; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-            <iframe 
-                src="https://public.tableau.com/views/Fonasa_17451793210550/Dashboard1?:embed=true&:language=es-ES&:display_count=y&:showVizHome=no&:toolbar=yes" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</body>
-</html>
+<!-- contenido del dashboard -->
+<section class="container py-4 dashboard-container">
+  <div class="dashboard-header">
+    <h2 class="dashboard-title">Fonasa</h2>
+    <a href="/index.html?view=bi" class="btn-back">🔙 Volver a Soluciones BI</a>
+  </div>
+
+  <!-- Contenedor responsivo para Tableau -->
+  <div class="tableau-responsive-container">
+    <iframe 
+      id="tableauViz"
+      src="https://public.tableau.com/views/Fonasa_17451793210550/Dashboard1?:embed=true&:language=es-ES&:display_count=y&:showVizHome=no&:toolbar=yes&:toolbar=bottom"
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<!-- footer -->
+<div id="footer"></div>
+
+<!-- scripts -->
+<script src="/assets/js/load-sections.js"></script>
+<script src="/assets/js/tableau-responsive.js"></script>
