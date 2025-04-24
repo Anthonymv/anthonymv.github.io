@@ -1,12 +1,11 @@
 <!-- Hero -->
 <div id="header"></div>
 
-<!-- Caso: Arquitectura BI en Azure -->
+<!-- Caso: Arquitectura BI en Azure con Datos Públicos -->
 <section class="container py-5 text-white">
   <h2 class="fw-bold text-center mb-4">Arquitectura BI en Azure</h2>
   <p class="text-center mb-4">
-    Diseño de una solución escalable para automatización de reportes médicos usando servicios nativos de Azure.
-    Toda la documentación se encuentra integrada visualmente en esta página.
+    Solución completa con datos públicos de salud en Chile. Desde la extracción hasta la visualización en Power BI. Todo documentado en esta misma página.
   </p>
 
   <!-- Botón volver -->
@@ -14,57 +13,98 @@
     <a href="/index.html?view=cloud" class="btn btn-light">🔙 Volver a Arquitectura Cloud</a>
   </div>
 
-  <!-- Documentación tipo Notion / Markdown -->
+  <!-- Documentación completa -->
   <div class="bg-white text-dark p-4 rounded shadow mx-auto" style="max-width: 960px;">
-    <h4 class="fw-bold">📌 Objetivo</h4>
-    <p>Automatizar reportes clínicos y operacionales de una plataforma de salud digital utilizando servicios Azure.</p>
+    <!-- Objetivo -->
+    <h4 class="fw-bold">📌 Objetivo del Proyecto</h4>
+    <p>Diseñar e implementar una arquitectura en Azure para analizar indicadores de salud pública utilizando datos abiertos de Chile.</p>
 
     <hr>
 
-    <h4 class="fw-bold">🧱 Componentes Arquitectónicos</h4>
+    <!-- Paso 1 -->
+    <h4 class="fw-bold">1️⃣ Adquisición de Datos Públicos</h4>
     <ul>
-      <li><strong>Origen de Datos:</strong> Azure SQL Database y endpoints REST de pacientes.</li>
-      <li><strong>Orquestación:</strong> Azure Data Factory (pipelines, triggers, linked services).</li>
-      <li><strong>Almacenamiento:</strong> Azure Data Lake Gen2 como staging y Synapse Analytics para modelado.</li>
-      <li><strong>Visualización:</strong> Power BI conectado por DirectQuery para reportes en tiempo real.</li>
-      <li><strong>Seguridad:</strong> Azure Key Vault + RBAC (control por roles).</li>
+      <li>🔗 <strong>Fuente:</strong> <a href="https://datos.gob.cl" target="_blank">Portal de Datos Abiertos de Chile</a>, <a href="https://deis.minsal.cl" target="_blank">DEIS MINSAL</a>, <a href="https://datosabiertos.fonasa.cl" target="_blank">FONASA</a>.</li>
+      <li>📂 <strong>Formato:</strong> CSV descargado y subido a Azure Blob Storage.</li>
     </ul>
 
     <hr>
 
-    <h4 class="fw-bold">🖼️ Diagrama de Arquitectura</h4>
+    <!-- Paso 2 -->
+    <h4 class="fw-bold">2️⃣ Integración con Azure Data Factory</h4>
+    <ul>
+      <li>🛠️ <strong>Pipeline ADF:</strong> lectura desde Blob Storage y carga a Data Lake Gen2.</li>
+      <li>🔄 <strong>Transformaciones:</strong> limpieza y estructuración con Data Flows.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Paso 3 -->
+    <h4 class="fw-bold">3️⃣ Modelado en Azure Synapse Analytics</h4>
+    <ul>
+      <li>📊 <strong>Modelo:</strong> Diseño estrella para consultas analíticas.</li>
+      <li>⚙️ <strong>Motor:</strong> Serverless SQL pool conectado al Data Lake.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Paso 4 -->
+    <h4 class="fw-bold">4️⃣ Visualización en Power BI</h4>
+    <ul>
+      <li>📈 <strong>Conexión:</strong> DirectQuery a Synapse para reportes en tiempo real.</li>
+      <li>🧩 <strong>Paneles:</strong> Mortalidad, atenciones, patologías, regiones.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Seguridad -->
+    <h4 class="fw-bold">🔐 Seguridad y Gobernanza</h4>
+    <ul>
+      <li>🧾 Azure Key Vault para almacenar secretos.</li>
+      <li>🔐 RBAC para controlar acceso por roles.</li>
+      <li>🛰️ Azure Monitor para trazabilidad.</li>
+    </ul>
+
+    <hr>
+
+    <!-- Diagrama -->
+    <h4 class="fw-bold">🖼️ Diagrama Arquitectónico</h4>
     <div class="text-center mb-3">
-      <img src="/assets/img/imgtestAZURE.png" class="img-fluid rounded shadow" style="max-width: 900px;" alt="Arquitectura BI en Azure">
-      <p class="text-muted small">Automatización de KPIs clínicos usando servicios PaaS en Azure</p>
+      <img src="/assets/img/imgtestAZURE.png" class="img-fluid rounded shadow" style="max-width: 900px;" alt="Diagrama Azure BI">
+      <p class="text-muted small">Flujo de datos desde fuentes públicas a Power BI.</p>
     </div>
 
     <hr>
 
+    <!-- Repositorio -->
     <h4 class="fw-bold">📂 Repositorio de Ejemplo</h4>
-    <p>Incluye scripts de Data Factory (JSON), definiciones de Synapse SQL y muestras de Power BI.</p>
-    <a href="https://github.com/anthonymv/azure-bi-demo" class="btn btn-outline-dark mb-3">🔗 Ver en GitHub</a>
+    <p>Incluye JSON de pipelines, consultas SQL y ejemplos de reportes.</p>
+    <a href="https://github.com/anthonymv/azure-bi-demo" target="_blank" class="btn btn-outline-dark mb-3">🔗 Ver en GitHub</a>
 
     <hr>
 
-    <h4 class="fw-bold">🧠 Insights del Proyecto</h4>
+    <!-- Resultados -->
+    <h4 class="fw-bold">✅ Resultados e Impacto</h4>
     <ul>
-      <li>✅ Mejora del tiempo de entrega de reportes en un 70%.</li>
-      <li>✅ Reducción de errores humanos mediante pipelines automáticos.</li>
-      <li>✅ Escalabilidad asegurada mediante almacenamiento desacoplado.</li>
+      <li>📊 Reportes 100% automatizados desde fuentes públicas.</li>
+      <li>⚡ Reducción de tiempo en generación de reportes operativos.</li>
+      <li>📡 Escalabilidad con servicios PaaS nativos de Azure.</li>
     </ul>
 
     <hr>
 
-    <h4 class="fw-bold">🧭 Próximos pasos</h4>
+    <!-- Futuro -->
+    <h4 class="fw-bold">🚀 Próximos Pasos</h4>
     <ul>
-      <li>✅ Integración con Azure Purview para gobierno de datos.</li>
-      <li>✅ Control de costos y alertas con Azure Monitor y Cost Management.</li>
+      <li>🧭 Integración con Azure Purview para catalogación de datos.</li>
+      <li>📉 Métricas de costo en Azure Monitor + Cost Management.</li>
+      <li>🌐 Nuevos casos con datos del Instituto de Salud Pública (ISP).</li>
     </ul>
   </div>
 
-  <!-- Futuro -->
+  <!-- Footer nota -->
   <div class="text-center mt-5">
-    <small class="text-white-50">✨ Más casos con datos públicos se agregarán pronto.</small>
+    <small class="text-white-50">🔄 Este caso está en constante mejora con nuevos datos públicos de Chile.</small>
   </div>
 </section>
 
