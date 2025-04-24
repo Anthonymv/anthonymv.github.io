@@ -1,36 +1,73 @@
 <!-- Hero -->
 <div id="header"></div>
 
-<!-- Sección Cloud -->
+<!-- Caso: Arquitectura BI en Azure -->
 <section class="container py-5 text-white">
-  <h2 class="fw-bold text-center mb-4">Arquitectura Cloud</h2>
-  <p class="text-center mb-5">
-    Diseños escalables con servicios de Azure, AWS y otras plataformas para soluciones de datos modernas.
+  <h2 class="fw-bold text-center mb-4">Arquitectura BI en Azure</h2>
+  <p class="text-center mb-4">
+    Diseño de una solución escalable para automatización de reportes médicos usando servicios nativos de Azure.
+    Toda la documentación se encuentra integrada visualmente en esta página.
   </p>
 
   <!-- Botón volver -->
   <div class="text-center mb-4">
-    <a href="/index.html#portfolio" class="btn btn-light">🔙 Volver al Portafolio</a>
+    <a href="/index.html?view=cloud" class="btn btn-light">🔙 Volver a Arquitectura Cloud</a>
   </div>
 
-  <!-- Casos disponibles -->
-  <div class="row justify-content-center g-4">
-    <div class="col-md-6 col-lg-4">
-      <a href="/index.html?view=azure-bi" class="text-decoration-none">
-        <div class="card bg-white text-dark shadow-sm h-100 p-4">
-          <h5 class="fw-bold mb-2">⚙️ Azure BI – Automatización de Reportes</h5>
-          <p class="mb-2">Automatización de reportes médicos con Azure SQL, Data Factory, Synapse y Power BI.</p>
-          <span class="badge bg-primary">Azure</span>
-        </div>
-      </a>
+  <!-- Documentación tipo Notion / Markdown -->
+  <div class="bg-white text-dark p-4 rounded shadow mx-auto" style="max-width: 960px;">
+    <h4 class="fw-bold">📌 Objetivo</h4>
+    <p>Automatizar reportes clínicos y operacionales de una plataforma de salud digital utilizando servicios Azure.</p>
+
+    <hr>
+
+    <h4 class="fw-bold">🧱 Componentes Arquitectónicos</h4>
+    <ul>
+      <li><strong>Origen de Datos:</strong> Azure SQL Database y endpoints REST de pacientes.</li>
+      <li><strong>Orquestación:</strong> Azure Data Factory (pipelines, triggers, linked services).</li>
+      <li><strong>Almacenamiento:</strong> Azure Data Lake Gen2 como staging y Synapse Analytics para modelado.</li>
+      <li><strong>Visualización:</strong> Power BI conectado por DirectQuery para reportes en tiempo real.</li>
+      <li><strong>Seguridad:</strong> Azure Key Vault + RBAC (control por roles).</li>
+    </ul>
+
+    <hr>
+
+    <h4 class="fw-bold">🖼️ Diagrama de Arquitectura</h4>
+    <div class="text-center mb-3">
+      <img src="/assets/img/imgtestAZURE.png" class="img-fluid rounded shadow" style="max-width: 900px;" alt="Arquitectura BI en Azure">
+      <p class="text-muted small">Automatización de KPIs clínicos usando servicios PaaS en Azure</p>
     </div>
-    <!-- Nuevos casos como AWS o GCP se agregan aquí -->
+
+    <hr>
+
+    <h4 class="fw-bold">📂 Repositorio de Ejemplo</h4>
+    <p>Incluye scripts de Data Factory (JSON), definiciones de Synapse SQL y muestras de Power BI.</p>
+    <a href="https://github.com/anthonymv/azure-bi-demo" class="btn btn-outline-dark mb-3">🔗 Ver en GitHub</a>
+
+    <hr>
+
+    <h4 class="fw-bold">🧠 Insights del Proyecto</h4>
+    <ul>
+      <li>✅ Mejora del tiempo de entrega de reportes en un 70%.</li>
+      <li>✅ Reducción de errores humanos mediante pipelines automáticos.</li>
+      <li>✅ Escalabilidad asegurada mediante almacenamiento desacoplado.</li>
+    </ul>
+
+    <hr>
+
+    <h4 class="fw-bold">🧭 Próximos pasos</h4>
+    <ul>
+      <li>✅ Integración con Azure Purview para gobierno de datos.</li>
+      <li>✅ Control de costos y alertas con Azure Monitor y Cost Management.</li>
+    </ul>
   </div>
 
+  <!-- Futuro -->
   <div class="text-center mt-5">
-    <small class="text-white-50">🚀 Próximamente: Arquitecturas en AWS y Google Cloud</small>
+    <small class="text-white-50">✨ Más casos con datos públicos se agregarán pronto.</small>
   </div>
 </section>
 
+<!-- Footer -->
 <div id="footer"></div>
 <script src="/assets/js/load-sections.js"></script>
