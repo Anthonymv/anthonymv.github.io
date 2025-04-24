@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
     case "usuarios-activos":
       load("content", "sections/usuarios-activos.html");
       break;
+    case "azure-bi":
+      load("content", "sections/azure-bi.html");
+      break;
     default:
       load("content", "sections/inicio.html");
       load("header", "sections/header.html");
