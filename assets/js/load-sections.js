@@ -19,12 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
       //load("header", "sections/header.html");
       break;
     case "bi":
-      // No cargar header aquí
       load("content", "sections/bi.html");
+      break;
+    case "cloud":
+      load("content", "sections/cloud.html");
       break;
     case "usuarios-activos":
       load("content", "sections/usuarios-activos.html");
-      //load("header", "sections/header.html");
       break;
     default:
       load("content", "sections/inicio.html");
