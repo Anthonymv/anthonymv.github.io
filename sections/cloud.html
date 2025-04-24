@@ -1,42 +1,61 @@
 <!-- Hero -->
 <div id="header"></div>
 
-<!-- Sección Arquitectura Cloud -->
+<!-- Caso Azure BI -->
 <section class="container py-5 text-white">
-  <h2 class="fw-bold text-center mb-4">Arquitectura Cloud</h2>
-  <p class="text-center mb-5">Diseños escalables con servicios de Azure, AWS y otras plataformas para soluciones de datos modernas.</p>
+  <h2 class="fw-bold text-center mb-4">Caso: Arquitectura BI en Azure</h2>
+  <p class="text-center mb-4">
+    Esta solución demuestra cómo automatizar reportes médicos utilizando servicios en la nube de Azure. Basado en datos públicos, este diseño muestra una arquitectura moderna y segura para visualización en tiempo real.
+  </p>
 
-  <!-- Botón para volver -->
   <div class="text-center mb-4">
-    <a href="/index.html#portfolio" class="btn btn-light">🔙 Volver al Portafolio</a>
+    <a href="/index.html?view=cloud" class="btn btn-light">🔙 Volver a Arquitectura Cloud</a>
   </div>
 
-  <!-- Casos disponibles -->
-  <div class="row justify-content-center g-4">
-    <!-- Caso Azure BI -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card h-100 shadow p-4 text-center">
-        <div class="icon fs-2 mb-2">☁️</div>
-        <h5 class="fw-bold mb-2">BI en Azure</h5>
-        <p class="text-muted small">Automatización de reportes médicos con Data Factory, Synapse y Power BI.</p>
-        <a href="/index.html?view=azure-bi" class="btn btn-light mt-2">📘 Ver Caso</a>
-      </div>
-    </div>
+  <!-- Markdown-like documentation -->
+  <div class="bg-white text-dark p-5 rounded shadow" style="max-width: 960px; margin: auto;">
+    <h3>📘 Descripción del Caso</h3>
+    <p>
+      Este caso se enfoca en la automatización de reportes médicos utilizando componentes nativos de Azure, permitiendo escalar y monitorear KPIs en tiempo real con una arquitectura segura y desacoplada.
+    </p>
 
-    <!-- Futuro: AWS y GCP -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card h-100 shadow p-4 text-center">
-        <div class="icon fs-2 mb-2">🌐</div>
-        <h5 class="fw-bold mb-2">AWS / GCP</h5>
-        <p class="text-muted small">Casos de arquitectura en otras nubes disponibles próximamente.</p>
-        <button class="btn btn-secondary mt-2" disabled>🔒 En desarrollo</button>
-      </div>
-    </div>
+    <h4>📌 Objetivos</h4>
+    <ul>
+      <li>Automatizar el flujo de datos desde origen hasta dashboard.</li>
+      <li>Usar orquestadores y almacenes escalables.</li>
+      <li>Asegurar la arquitectura con buenas prácticas.</li>
+    </ul>
+
+    <h4>🔧 Servicios utilizados</h4>
+    <ul>
+      <li><strong>Azure SQL:</strong> Base de datos operativa.</li>
+      <li><strong>API REST:</strong> Servicios externos con datos complementarios.</li>
+      <li><strong>Azure Data Factory:</strong> Ingesta y transformación de datos.</li>
+      <li><strong>Azure Data Lake Gen2:</strong> Almacenamiento de staging.</li>
+      <li><strong>Azure Synapse Analytics:</strong> Consulta de datos.</li>
+      <li><strong>Power BI (DirectQuery):</strong> Visualización de KPIs en tiempo real.</li>
+      <li><strong>Azure Key Vault:</strong> Gestión de secretos y credenciales.</li>
+    </ul>
+
+    <h4>📌 Diagrama de Arquitectura</h4>
+    <img src="/assets/img/imgtestAZURE.png" class="img-fluid rounded mb-3 shadow" alt="Arquitectura Azure BI">
+    <p class="text-muted small">Representación visual del flujo completo desde los datos hasta la visualización.</p>
+
+    <h4>📂 Repositorio Público</h4>
+    <p>
+      Puedes acceder al código y scripts de ejemplo en el siguiente repositorio:
+      <br>
+      <a href="https://github.com/anthonymv/azure-bi-demo" target="_blank" class="btn btn-light mt-2">📁 Ver en GitHub</a>
+    </p>
+
+    <h4>🧩 Próximos Casos</h4>
+    <ul>
+      <li>📦 Arquitectura de Integración en AWS con Glue y Redshift</li>
+      <li>🌐 Google Cloud con BigQuery y Looker Studio</li>
+    </ul>
   </div>
 </section>
 
 <!-- Footer -->
 <div id="footer"></div>
-
-<!-- Script de carga de secciones -->
 <script src="/assets/js/load-sections.js"></script>
